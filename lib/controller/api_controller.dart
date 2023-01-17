@@ -8,9 +8,7 @@ class ApiController {
   Future<List<Model?>?> getUsers() async{
     final url="https://api.unsplash.com/photos/?client_id=8634366274bd23efb9b023fb9b2c6502e67f7dd5d6a7962b3b49fbee170940f8";
 
-
-
-    /*final req=await http.get(Uri.parse(url));
+    final req=await http.get(Uri.parse(url));
     if(req.statusCode==200){
       final body=req.body;
       final model = modelFromJson(body);
@@ -20,8 +18,6 @@ class ApiController {
       final error = modelFromJson(body);
       print(error);
       return error;
-    }*/
-
-
+    }
   }
 }
